@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SpeakXR | Mixed Reality Public Speaking</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header class="topbar"><div class="brand"><span class="mark">S</span><span>Speak<span class="accent">XR</span></span></div><span class="tag">AI + MIXED REALITY • PROTOTYPE</span></header>
+<main class="layout">
+  <section class="intro">
+    <p class="eyebrow">PRACTICE WITH PURPOSE</p>
+    <h1>Make your next<br><span class="gradient">voice count.</span></h1>
+    <p class="lead">A public-speaking practice space designed to help you rehearse, reflect, and grow more confident.</p>
+    <div class="chips"><span>Speech practice</span><span>Self-review</span><span>MR-ready concept</span></div>
+  </section>
+  <section class="panel">
+    <div class="panel-head"><div><p class="eyebrow">YOUR PRACTICE SESSION</p><h2>Quick rehearsal</h2></div><span class="live-dot">● Ready</span></div>
+    <label for="topic">What are you speaking about?</label>
+    <input id="topic" maxlength="100" placeholder="e.g. Why learning never stops">
+    <label for="speech">Your speech / rehearsal notes</label>
+    <textarea id="speech" rows="7" placeholder="Type your speech here, or use the microphone to dictate if your browser supports speech recognition."></textarea>
+    <div class="actions"><button id="micBtn" class="secondary">🎙 Use microphone</button><button id="analyzeBtn" class="primary">Review my speech ↗</button></div>
+    <p id="micStatus" class="hint">Microphone input depends on browser support and permission. You can type instead.</p>
+    <div id="results" class="results hidden" aria-live="polite">
+      <h3>Practice review</h3><p class="demo-note">Starter feedback based on text — not an AI or clinical assessment.</p>
+      <div class="metrics"><div><strong id="wordCount">0</strong><span>Words</span></div><div><strong id="sentenceCount">0</strong><span>Sentences</span></div><div><strong id="fillerCount">0</strong><span>Filler words</span></div></div>
+      <p id="feedback"></p><button id="resetBtn" class="secondary">Start again</button>
+    </div>
+  </section>
+  <section class="feature-grid">
+    <article><span class="feature-icon">◉</span><h3>Practice safely</h3><p>Rehearse before presenting to a real audience.</p></article>
+    <article><span class="feature-icon">↗</span><h3>Build awareness</h3><p>Review structure, repeated filler words, and clarity.</p></article>
+    <article><span class="feature-icon">◇</span><h3>MR vision</h3><p>Future direction: immersive audience scenes and spatial coaching cues.</p></article>
+  </section>
+  <footer>Student project prototype • Speech text stays in this browser page; no backend is connected.</footer>
+</main>
+<script src="app.js"></script>
+</body></html>

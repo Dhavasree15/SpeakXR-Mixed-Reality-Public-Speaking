@@ -1,0 +1,10 @@
+{
+  "purpose": "Illustrative test input only; not personal data",
+  "topic": "Why communication skills matter",
+  "speech_text": "Good morning everyone. Today I want to talk about communication. Um, clear communication helps us share ideas and work together. Thank you.",
+  "expected_basic_checks": {
+    "word_count_gt": 10,
+    "sentence_count_gt": 1,
+    "filler_word_count_at_least": 1
+  }
+}
